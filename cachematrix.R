@@ -17,6 +17,8 @@
 ## Create the vector with the 4 functions
 
 makeCacheMatrix <- function(x = matrix()) {
+        ## first check if matrix is square
+        if(!(nrow(x)==ncol(x))) print("Matrix is not square !!")
         m <- NULL
         set <- function(y) {
                 x <<- y
